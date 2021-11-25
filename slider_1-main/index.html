@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Planet</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<link rel="stylesheet" href="assets/css/style.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<meta charset="UTF-8">
+</head>
+<body>
+    <div class='preloader'>
+		<div id='galaxy'>
+		  <div class='circle'></div>
+		  <div class='circle2'></div>
+		  <div class='circle3'></div>
+		  <div id='orbit0'>
+			<div id='pos0'>
+			  <div id='dot0'></div>
+			</div>
+		  </div>
+		  <div id='orbit1'>
+			<div id='pos1'>
+			  <div id='dot1'></div>
+			</div>
+		  </div>
+		  <div id='orbit2'>
+			<div id='pos2'>
+			  <div id='dot2'></div>
+			</div>
+		  </div>
+		  <div id='orbit3'>
+			<div id='pos3'>
+			  <div id='dot3'></div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+    <div class="wrapper">
+        <div class="content">
+            <div class="hi">
+                <div class="container">
+                    <nav class="menu slide_menu">
+                    <ul class="nav_menu">
+                        <li><a class="menu_link" href="#">Home page</a></li>
+                        <span class="menu_link_"><img class="arrow" src="./assets/css/arroww.png"><a class="menu_link_btn" href="#">Planets</a></span>
+                            <div class="planet_list">
+                                <a class="link_planet" href="#">Mercury</a>
+                                <a class="link_planet" href="#">Venus</a>
+                                <a class="link_planet" href="#">Earth</a>
+                                <a class="link_planet" href="#">Mars</a>
+                                <a class="link_planet" href="#">Jupiter</a>
+                                <a class="link_planet" href="#">Saturn</a>
+                                <a class="link_planet" href="#">Uranus</a>
+                                <a class="link_planet" href="#">Neptune</a>
+                            </div>
+                        <li><a class="menu_link" href="#">My tour</a></li>
+                        <li><a class="menu_link" href="#">Hot tour</a></li>
+                        <li><a class="menu_link" href="#">Games</a></li>
+                        <li><a class="menu_link" href="#">My planet</a></li>
+                        <li><a class="menu_link" href="#">Contacts</a></li>
+                    </ul>
+                </nav>
+                <span class="poloska1"></span>
+                <span class="poloska2"></span>
+                <span class="poloska3"></span>
+                <header>
+                    <div class="header_inner">
+                        <a class="logo" href="#"><img src="./assets/css/logo.png"></a>
+                        <a href="#" class="menu_btn"><span></span></a>
+                    </div>
+                </header>
+                <script src="assets/js/app.js"></script>
+                    <div class="hi_row">
+                        <div class="hi_text">
+                            <div class="hi_text_1">TEST</div>
+                            <div class="hi_text_2">Which tour should you choose</div>
+                            <div class="hi_text_3">Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune or Pluto?</div>
+                        </div>
+                        <div class="hi_slider">
+                            <div>
+                                <a href=" https://ekaterinadr.github.io/slader2/" class="hi_submit">START</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.onload = function () {
+          document.body.classList.add('loaded_hiding');
+          window.setTimeout(function () {
+            document.body.classList.add('loaded');
+            document.body.classList.remove('loaded_hiding');
+          }, 500);
+        }
+      </script>
+</body>
+</html>

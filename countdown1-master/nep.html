@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+     <meta charset="UTF-8">
+     <link rel="stylesheet" href="css/merc.css"> 
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>   
+     <title>Нептун</title>
+</head>
+
+<body>
+   <nav class="menu slide_menu">
+       <ul class="nav_menu">
+           <li><a class="menu_link" href="#">Home page</a></li>
+           <span class="menu_link_"><img class="arrow" src="css/images/arroww.png"><a class="menu_link_btn" href="#">Planets</a></span>
+           <div class="planet_list">
+               <a class="link_planet" href="#">Mercury</a>
+               <a class="link_planet" href="#">Venus</a>
+               <a class="link_planet" href="#">Earth</a>
+               <a class="link_planet" href="#">Mars</a>
+               <a class="link_planet" href="#">Jupiter</a>
+               <a class="link_planet" href="#">Saturn</a>
+               <a class="link_planet" href="#">Uranus</a>
+               <a class="link_planet" href="#">Neptune</a>
+           </div>
+           <li><a class="menu_link" href="#">My tour</a></li>
+           <li><a class="menu_link" href="#">Hot tour</a></li>
+           <li><a class="menu_link" href="#">Games</a></li>
+           <li><a class="menu_link" href="#">My planet</a></li>
+           <li><a class="menu_link" href="#">Contacts</a></li>
+       </ul>
+   </nav>
+   <span class="poloska1"></span>
+   <span class="poloska2"></span>
+   <span class="poloska3"></span>
+   <header>
+      <div class="header_inner">
+         <a class="logo" href="#"><img src="css/images/logo.png"></a>
+         <a href="#" class="menu_btn"><span></span></a>
+      </div>
+   </header>
+
+      <div class="intro">
+            <div class="container">
+                <div class="intro__inner">
+
+                    <h2 class="intro__suptitle">Your journey will begin very soon!</h2>
+                    <h1 class="intro__title">There is still time left before departure:</h1>
+
+                    <div class="countdown">
+                        <div class="time-selection">
+                            <span class="count" id="days"></span>
+                            <span class="units">Days </span>
+                        </div>
+                        <div class="time-selection">
+                            <span class="count" id="hours"></span>
+                            <span class="units">Hours</span>
+                        </div>
+                        <div class="time-selection">
+                            <span class="count" id="minutes"></span>
+                            <span class="units">Minutes</span>
+                        </div>
+                        <div class="time-selection">
+                            <span class="count" id="seconds"></span>
+                            <span class="units">Seconds</span>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <a onclick="history.back();" class="btn">Back</a>
+                    </div>
+                </div>
+            </div>
+      </div>
+
+   <script src="js/nep.js"></script>
+   </body>
+   </html>

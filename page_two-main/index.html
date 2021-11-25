@@ -1,0 +1,263 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<title>Choosing a planet</title>
+</head>
+<body>
+	<div class='preloader'>
+		<div id='galaxy'>
+		  <div class='circle'></div>
+		  <div class='circle2'></div>
+		  <div class='circle3'></div>
+		  <div id='orbit0'>
+			<div id='pos0'>
+			  <div id='dot0'></div>
+			</div>
+		  </div>
+		  <div id='orbit1'>
+			<div id='pos1'>
+			  <div id='dot1'></div>
+			</div>
+		  </div>
+		  <div id='orbit2'>
+			<div id='pos2'>
+			  <div id='dot2'></div>
+			</div>
+		  </div>
+		  <div id='orbit3'>
+			<div id='pos3'>
+			  <div id='dot3'></div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	<nav class="menu slide_menu">
+		<ul class="nav_menu">
+			<li><a class="menu_link" href="../index.html">Home page</a></li>
+			<span class="menu_link_"><img class="arrow" src="images/arroww.png"><a class="menu_link_btn" href="#">Planets</a></span>
+				<div class="planet_list">
+					<a class="link_planet" id="link_mercury" href="../mercury-main/index.html">Mercury</a>
+					<a class="link_planet" id="link_venus" href="../venus_-main/index.html">Venus</a>
+					<a class="link_planet" id="link_earth" href="../earth-main/index.html">Earth</a>
+					<a class="link_planet" id="link_mars" href="../mars_-main/index.html">Mars</a>
+					<a class="link_planet" id="link_jupiter" href="../jupiter-main/index.html">Jupiter</a>
+					<a class="link_planet" id="link_saturn" href="../saturn-main/index.html">Saturn</a>
+					<a class="link_planet" id="link_uranus" href="../uranus-main/index.html">Uranus</a>
+					<a class="link_planet" id="link_neptun" href="../neptun_2-main/index.html">Neptune</a>
+				</div>
+				<li><a class="menu_link" href="../slider_1-main/11/index.html">My tour</a></li>
+				<li><a class="menu_link" href="../burning-tour-master/index.html">Hot tour</a></li>
+				<li><a class="menu_link" href="../mini_games-main/index.html">Games</a></li>
+				<li><a class="menu_link" href="../result_1-main/index.html">My planet</a></li>
+				<li><a class="menu_link" href="../contacts-main/index.html">Contacts</a></li>
+		</ul>
+	</nav>
+	<span class="poloska1"></span>
+	<span class="poloska2"></span>
+	<span class="poloska3"></span>
+
+<div class="head_nav">
+<div class="icons_planets">
+	<div class="planet_menu"><img class="planet_icon" src="images/merkuriy.png"></div>
+	<div class="planet_menu"><img class="planet_icon" src="images/venera.png"></div>
+	<div class="planet_menu"><img class="planet_icon" src="images/zemlya.png"></div>
+	<div class="planet_menu"><img class="planet_icon" src="images/mars.png"></div>
+	<div class="planet_menu"><img class="planet_icon" src="images/юпитер.png"></div>
+	<div class="planet_menu"><img class="planet_icon" src="images/saturn.png"></div>
+	<div class="planet_menu"><img class="planet_icon" src="images/uran.png"></div>
+	<div class="planet_menu"><img class="planet_icon" src="images/neptun.png"></div>
+	<div class="planet_menu"><img class="planet_icon" src="images/moya_planeta.png"></div>
+</div>
+<div class="adapt_head">
+<header>
+	<div class="header_inner">
+		<a class="logo" href="../index.html"><img src="images/logo.png"></a>
+	<a class="menu_btn"><span></span></a>
+	</div>
+	</header>
+<div class="solar_system">
+	<div class="solar_shadow">
+		<div class="shadow-myplanet">
+		</div>
+	</div>
+	<div class="solar" id="solar_myplanet">
+		<div class="cycle-planet-myplanet" id="planet">
+		</div> 
+		<div class="description" id="descrip_myplanet">
+			<h3>MY PLANET</h3>
+			<p>Didn't like any of the suggested tours? There is always a way out! Create your own planet!</p>
+			<a class="podrobnee" href="../result_1-main/index.html">Take the test</a>
+		 </div>
+	</div> 
+	<div class="solar_shadow">
+		<div class="shadow-neptun">
+		</div>
+	</div>
+	<div class="solar" id="solar_neptun">
+		<div class="cycle-planet-neptune" id="planet">
+		</div>
+		<div class="description" id="descrip_neptun">
+			<h3>NEPTUNE</h3>
+			<p>It's no secret that Neptune is the god of the seas. Our tour offers you to visit the most unusual space water park in the entire galaxy! Be careful, the wind here reaches 2100 km/h!</p>
+			<a class="podrobnee" href="../neptun_2-main/index.html">More detailed</a>
+		 </div>
+	</div>
+	<div class="solar_shadow">
+		<div class="shadow-uran">
+		</div>
+	</div>
+	<div class="solar" id="solar_uran">
+		<div class="cycle-planet-uran" id="planet">
+		</div>
+		<div class="description" id="descrip_uran">
+			<h3>URANUS</h3>
+			<p>Are you always hot and stuffy? Then our "cooling" tour is for you. It has this name for a reason: the temperature of uranium is -224℃! It seems better to stock up on a heater</p>
+			<a class="podrobnee" href="../uranus-main/index.html">More detailed</a>
+		 </div>
+	</div>
+	<div class="solar_shadow">
+		<div class="shadow-saturn">
+		</div>
+	</div>
+	<div class="solar" id="solar_saturn">
+		<div class="cycle-planet-saturn" id="planet">
+		</div>
+		<div class="description" id="descrip_saturn">
+			<h3>SATURN</h3>
+			<p>An amusement park? Trampolines? Or maybe a roller coaster through the rings of Saturn? But hold on tight, don't fall - the density of Saturn is 2 times less than the density of water</p>
+			<a class="podrobnee" href="../saturn-main/index.html">More detailed</a>
+		 </div>
+	</div>
+	<div class="solar_shadow">
+		<div class="shadow-jupiter">
+		</div>
+	</div>
+	<div class="solar"  id="solar_jupiter">
+		<div class="cycle-planet-jupiter" id="planet">
+		</div>
+		<div class="description" id="descrip_jupiter">
+			<h3>JUPITER</h3>
+			<p>There is enough space for everyone! However, do not forget that it does not last long on this planet and do not lose your vigilance, because on Jupiter a day lasts only 12 earth hours, but a year lasts 12 earth years.</p>
+			<a class="podrobnee" href="../jupiter-main/index.html">Подробнее</a>
+		 </div>
+	</div>
+	<div class="solar_shadow">
+		<div class="shadow-mars">
+		</div>
+	</div>
+	<div class="solar" id="solar_mars">
+		<div class="cycle-planet-mars" id="planet">
+		</div>
+		<div class="description" id="descrip_mars">
+			<h3>MARS</h3>
+			<p>If you are interested in life on Mars - this tour is for you! Let's put all the dots over the "And" and answer the most pressing question: is life on Mars really real?</p>
+			<a class="podrobnee" href="../mars_-main/index.html">More detailed</a>
+		 </div>
+	</div>
+	<div class="solar_shadow">
+		<div class="shadow-earth">
+		</div>
+	</div>
+	<div class="solar" id="solar_earth">
+		<div class="cycle-planet-earth" id="planet">
+		</div>
+		<div class="description" id="descrip_earth">
+			<h3>EARTH</h3>
+			<p>You think you know the Earth inside and out, but our tour will convince you otherwise! We will show you the unexplored corners of this planet, because the new is the well-forgotten old!</p>
+			<a class="podrobnee" href="../earth-main/index.html">More detailed</a>
+		 </div>
+	</div>
+	<div class="solar_shadow">
+		<div class="shadow-venus">
+		</div>
+	</div>
+	<div class="solar" id="solar_venus">
+		<div class="cycle-planet-venus" id="planet">
+		</div>
+		<div class="description" id="descrip_venus">
+			<h3>VENUS</h3>
+			<p>Lonely and lacking warmth? Then you are at the right place! Our Venus tour will not only warm you up, but also provide you with a companion. After all, the temperature on this planet is 467℃</p>
+			<a class="podrobnee" href="../venus_-main/index.html">Подробнее</a>
+		 </div>
+	</div>
+	<div class="solar_shadow">
+		<div class="shadow-mercury">
+		</div>
+	</div>
+	<div class="solar" id="solar_mercury">
+	<div class="cycle-planet-mercury" id="planet">
+	</div>
+	<div class="description" id="descrip_mercury">
+		<h3>MERCURY</h3>
+		<p>Haven't relaxed for a long time? It doesn't matter! Our tour will help you to feel all the charm of rest. Hot springs and geysers of mercury will give an unforgettable experience</p>
+		<a class="podrobnee" href="../mercury-main/index.html">More detailed</a>
+	 </div>
+	</div>
+</div>
+</div>
+</div>
+<div class="shadows">
+	<div class="shadow"></div>
+	<div class="shadow"></div>
+	<div class="shadow"></div>
+	<div class="shadow"></div>
+	<div class="shadow"></div>
+	<div class="shadow"></div>
+	<div class="shadow"></div>
+	<div class="shadow"></div>
+	<div class="shadow"></div>
+</div>
+<div class="buttons_planets">
+	<div class="radio">
+		<input class="custom-radio" name="radio_btns" type="radio" id="moya_planeta_btn">
+		<label for="moya_planeta_btn"><div class="texxxt">MY PLANET</div></label>
+	 </div>
+	 <div class="radio">
+		<input class="custom-radio" name="radio_btns" type="radio" id="neptun_btn">
+		<label for="neptun_btn"><div class="texxxt">NEPTUNE</div></label>
+	 </div>
+	 <div class="radio">
+		<input class="custom-radio" name="radio_btns" type="radio" id="uran_btn">
+		<label for="uran_btn"><div class="texxxt">URANUS</div></label>
+	 </div>
+	 <div class="radio">
+		<input class="custom-radio" name="radio_btns" type="radio" id="saturn_btn">
+		<label for="saturn_btn"><div class="texxxt">SATURN</div></label>
+	 </div>
+	 <div class="radio">
+		<input class="custom-radio" name="radio_btns" type="radio" id="jupiter_btn">
+		<label for="jupiter_btn"><div class="texxxt">JUPITER</div></label>
+	 </div>
+	 <div class="radio">
+		<input class="custom-radio" name="radio_btns" type="radio" id="mars_btn">
+		<label for="mars_btn"><div class="texxxt">MARS</div></label>
+	 </div>
+	 <div class="radio">
+		<input class="custom-radio" name="radio_btns" type="radio" id="zemlya_btn">
+		<label for="zemlya_btn"><div class="texxxt">EARTH</div></label>
+	 </div>
+	 <div class="radio">
+		<input class="custom-radio" name="radio_btns" type="radio" id="venera_btn">
+		<label for="venera_btn"><div class="texxxt">VENUS</div></label>
+	 </div>
+	 <div class="radio">
+		<input class="custom-radio" name="radio_btns" type="radio" id="mercury_btn" checked>
+		<label for="mercury_btn"><div class="texxxt">MERCURY</div></label>
+	 </div>
+</div>
+<script>
+	window.onload = function () {
+	  document.body.classList.add('loaded_hiding');
+	  window.setTimeout(function () {
+		document.body.classList.add('loaded');
+		document.body.classList.remove('loaded_hiding');
+	  }, 500);
+	}
+  </script>
+<script src="app.js"></script>
+</body>
+</html>
